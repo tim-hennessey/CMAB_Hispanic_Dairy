@@ -1,0 +1,70 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#banner {
+	background: #111;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    .txt {
+        top: 0;
+        left: 300px;
+        position: absolute;
+    }
+
+    #bg {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    #cta {
+        top: 0;
+        left: 0;
+        display: none;
+        position: absolute;
+    }
+
+    #container {
+        bottom: 0;
+        left: 0;
+        width: $banner-width;
+        height: 225px;
+        overflow: hidden;
+        position: absolute;
+
+        #txtBox {
+            top: -24px;
+            left: 0;
+            position: absolute;
+        }
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+
+    #border {
+      display: block;
+      width: $banner-width;
+      height: $banner-height;
+      pointer-events: none;
+      outline: solid 1px #ccc;
+      outline-offset: -1px;
+      z-index: 999;
+  }
+}
