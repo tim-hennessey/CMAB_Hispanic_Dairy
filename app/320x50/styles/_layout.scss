@@ -18,10 +18,11 @@ body {
     opacity: 0;
 
     .txt {
-        top: 0;
-        left: 300px;
+        top: -90px;
+        left: 0;
         position: absolute;
     }
+
 
     #bg {
         top: 0;
@@ -29,27 +30,6 @@ body {
         position: absolute;
     }
 
-    #cta {
-        top: 5px;
-        left: 0;
-        display: none;
-        position: absolute;
-    }
-
-    #container {
-        bottom: 0;
-        left: 0;
-        width: $banner-width;
-        height: 225px;
-        overflow: hidden;
-        position: absolute;
-
-        #txtBox {
-            top: -24px;
-            left: 0;
-            position: absolute;
-        }
-    }
 
     #button-exit {
         background-color: rgba(255, 255, 255, 0);
