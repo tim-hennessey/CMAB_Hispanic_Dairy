@@ -10,7 +10,7 @@ app.Animation = (function () {
 	var txt2 = document.getElementById('txt2');
 	var txt3 = document.getElementById('txt3');
 	var cta = document.getElementById('cta');
-	// var txtBox = document.getElementById('txtBox');
+	var txtBox = document.getElementById('txtBox');
 
 	// --------------------------------------------------------------------------------------
 	// set default properties
@@ -25,7 +25,9 @@ app.Animation = (function () {
 	// Starts the animation
 	function start() {
 
-		tl.to(txt1, .5, {x:"-=300", ease: Sine.easeOut}, "-=.25")
+		tl.to(txtBox, .5, {y:"+=125", ease: Sine.easeOut}, "+=1")
+
+		.to(txt1, .5, {x:"-=300", ease: Sine.easeOut}, "-=.25")
 		.to(txt1, .5, {x:"-=300", ease: Sine.easeIn}, "+=2")
 
 		.to(txt2, .5, {x:"-=300", ease: Sine.easeOut}, "-=.25")
@@ -34,7 +36,7 @@ app.Animation = (function () {
 		.to(txt3, .5, {x:"-=300", ease: Sine.easeOut}, "-=.25")
 
 
-		.set(cta, {display: "block"})
+		.set(cta, {display: "block"}, "+=2")
 		.from(cta, .75, {y:"-=32", ease: Elastic.easeOut});
 		
 		

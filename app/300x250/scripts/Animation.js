@@ -36,7 +36,7 @@ app.Animation = (function () {
 		.to(txt3, .5, {x:"-=300", ease: Sine.easeOut}, "-=.25")
 
 
-		.set(cta, {display: "block"})
+		.set(cta, {display: "block"}, "+=2")
 		.from(cta, .75, {y:"-=32", ease: Elastic.easeOut});
 		
 		
